@@ -166,7 +166,15 @@
                 </div>
 			</section><!-- First-section -->
 			<section id="section1" class="first-section section">
-				<hr>
+				<div class="backgroundcontainer">
+					<div class="background-arriba">
+						<img src="./img/servicesarriba2.png">
+					</div>
+					<hr>
+					<div class="background-abajo">
+						<img src="./img/servicesabajo2.png">
+					</div>
+				</div>
 			</section><!-- Second-section -->
 			<section id="section2" class="second-section section">
 			</section><!-- Second-section -->

@@ -112,7 +112,7 @@ $(document).ready(function(){
 	$('#maindiv').pagepiling({
 		direction: 'vertical',
        	verticalCentered: true,
-        scrollingSpeed: 700,
+        scrollingSpeed: 10,
 		keyboardScrolling: true,
         sectionSelector: '.section'
 
@@ -122,13 +122,7 @@ $(document).ready(function(){
 	// 	scrollingSpeed: 1700,
 	});
 
-	// if ($(".first-section.active")){
-	// 	$('#pp-nav li a:before').css({
-	// 		'background':'#000'
-	// 	});
-	// }
-
-	zero.delay(4000).fadeIn(800, function(){
+	zero.delay(3000).fadeIn(800, function(){
 
 	zero.cooltext({
 	   sequence: [{
@@ -203,9 +197,9 @@ $(document).ready(function(){
                 delay: readDelay
             }
 	   ],
-	   pauseOnMouseOver:true, // stops animations sequence on mouse over
-	   resumeOnMouseOut:true, // resume animations sequence on mouse out
-	   cycle:true             // cyclic sequence
+	   pauseOnMouseOver:true,
+	   resumeOnMouseOut:true,
+	   cycle:true
 	});
 
 	});
