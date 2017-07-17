@@ -1,0 +1,59 @@
+html { 
+  background: url('../img/bg-opt.jpeg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@font-face {
+    font-family: 'gotham';
+    src: url('../fonts/Gotham-Light.ttf');
+}
+
+body {
+  margin:0 20px;
+  font-family: 'gotham', Arial, Helvetica, sans-serif;
+  color: #fafafa;
+}
+
+.soon {
+  position: relative;
+  left:7%;
+  float:left;
+  margin-top: 3%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.soon div:first-child{
+  font-size: 28px;
+}
+
+.soon div:last-child{
+  font-size: 18px;  
+  padding-top: 25px
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo {
+  position: relative;
+  right:7%;
+  float: right;
+  margin-top: 3%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .logo,.soon{
+    width: 100%;
+    /*padding:0 10px;*/
+    left:0;
+    right:0;
+    margin: 0 auto;
+    margin-top:10%;
+  }
+}
