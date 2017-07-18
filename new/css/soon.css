@@ -64,7 +64,7 @@ body{
   }
   .navbar-default.affix {
     padding: 0;
-
+    background-color: #222!important;
     /* Add additional styles here for the COLLAPSED state */
   }
 }
