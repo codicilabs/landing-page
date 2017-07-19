@@ -91,6 +91,25 @@ body{
 }
 
 
+
+/***************/
+/* Contacto */
+/***************/
+#contacto{
+	color: #fff;
+	font-family: 'Montserrat';
+}
+#contacto .form{
+	margin-top: 60px;
+}
+.form-control{
+	border-radius: 0; 
+	background-color: inherit;
+	
+}
+
+
+
 /***************/
 /* Helpers */
 /***************/
