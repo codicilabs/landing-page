@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="css/effects.css" />
 		
 		<link rel="stylesheet" href="css/soon.css" />
-		<link rel="stylesheet" href="css/stars.css" />
+		
 
 
 		<!-- google fonts -->
@@ -35,8 +35,8 @@
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
+		      <button type="button" class="navbar-toggle x collapsed" data-toggle="collapse" data-target="#navbar-collapse-x" aria-expanded="false">
+		        
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
@@ -45,7 +45,7 @@
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		    <div class="collapse navbar-collapse" id="navbar-collapse-x">
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#">Nostros</a></li>
 		        <li><a href="#">Servicios</a></li>
@@ -60,9 +60,6 @@
 			
 		<!-- ANIMATED LOGO -->	
 		<div class="svg-intro">
-			<div id="stars"></div>
-			<div id="stars2"></div>
-			<div id="stars3"></div>
 			<svg class="ip-inner" width="100%" height="100%" viewBox="0 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
 				<polygon stroke="#ddd" class="fill-black path3" stroke-width="0.2" points="77.413,139.335 88.272,139.335 88.272,138.854 77.942,138.854 
 					77.942,122.518 77.413,122.518 "/>
@@ -220,6 +217,13 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 
+				var isMobile 
+				if($(window).width() > 1024){
+					isMobile = true;
+				}else{
+					isMobile = false;
+				}
+
 				//****************************************************
 				// Animated navbar
 				//****************************************************
@@ -230,7 +234,7 @@
 				});
 
 				$('.navbar').on('affix.bs.affix', function () {
-				    $('.navbar-brand').fadeIn();
+				    //$('.navbar-brand').fadeIn();
 				    $('#bs-example-navbar-collapse-1').fadeIn();
 				});
 
