@@ -1,9 +1,9 @@
 
 
 svg {
-	padding-left: 200px;
-	height: 400px;
-	margin: auto;
+	margin: 0 auto; /* poor attempt at centering */
+	height: auto !important; /* overrides inline */
+	width: auto !important; /* overrides inline */
 	fill: transparent;
 	fill: none;
 	stroke-width: 6;
