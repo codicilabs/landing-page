@@ -162,7 +162,7 @@ svg{
 /* Nosotros */
 /***************/
 #nosotros{
-	 background: #1abc9c;
+	background: #1abc9c;
     background: -moz-linear-gradient(-45deg, #1abc9c 0%, #1abc9c 30%, #333 30%, #333 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, #1abc9c), color-stop(30%, #1abc9c), color-stop(30%, #333), color-stop(100%, #333));
     background: -webkit-linear-gradient(-45deg, #1abc9c 0%, #1abc9c 30%, #333 30%, #333 100%);
@@ -185,6 +185,21 @@ svg{
     background: -o-linear-gradient(-45deg, #e74c3c 0%, #e74c3c 30%, #222 30%, #222 100%);
     background: -ms-linear-gradient(-45deg, #e74c3c 0%, #e74c3c 30%, #222 30%, #222 100%);
     background: linear-gradient(135deg, #e74c3c 0%, #e74c3c 30%, #222 30%, #222 100%);
+    filter: progid:DXImageTransform.Micro;
+    image-rendering: antialiasing ;
+}
+
+/***************/
+/* portfolio */
+/***************/
+#portfolio{
+	 background: #1abc9c;
+    background: -moz-linear-gradient(-45deg, #3498db 0%, #3498db 30%, #222 30%, #222 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #3498db), color-stop(30%, #3498db), color-stop(30%, #222), color-stop(100%, #222));
+    background: -webkit-linear-gradient(-45deg, #3498db 0%, #3498db 30%, #222 30%, #222 100%);
+    background: -o-linear-gradient(-45deg, #3498db 0%, #3498db 30%, #222 30%, #222 100%);
+    background: -ms-linear-gradient(-45deg, #3498db 0%, #3498db 30%, #222 30%, #222 100%);
+    background: linear-gradient(135deg, #3498db 0%, #3498db 30%, #222 30%, #222 100%);
     filter: progid:DXImageTransform.Micro;
     image-rendering: antialiasing ;
 }
