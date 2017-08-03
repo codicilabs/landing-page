@@ -159,7 +159,7 @@
 		<!-- / ANIMATED LOGO -->
 				
 		<!-- Section -->			
-		<section class="nosotros" id="nosotros" data-color="#1abc9c">
+		<section class="nosotros section" id="nosotros" data-color="#1abc9c">
 			<h2>Nosotros</h2>
 			<div class="row">
 				<div class="col-md-4 section-icon"><img src="img/school.ico" width="200"></div>
@@ -175,7 +175,7 @@
 		</section>
 		<!--/ Section -->
 		<!-- Section -->
-		<section class="vision rojo" id="vision" data-color="#e74c3c">
+		<section class="vision rojo section" id="vision" data-color="#e74c3c">
 			<h2>Servicios</h2>
 			<div class="row">
 				<div class="col-md-4 section-icon"><img src="img/school.ico" width="200"></div>
@@ -189,7 +189,7 @@
 		<!-- / Section -->
 		<!-- Section -->
 
-		<section class="portfolio azul" id="portfolio" data-color="#3498db">
+		<section class="portfolio azul section" id="portfolio" data-color="#3498db">
 			<h2>Portfolio</h2>
 			<div class="row">
 				<div class="col-md-4 section-icon"><img src="img/school.ico" width="200"></div>
@@ -202,8 +202,9 @@
 		</section>
 		<!-- / Section -->
 
-		<div class="container-fluid">
-		<section class="contacto container" id="contacto" data-color="#3498db">
+
+		<div class="container-fluid verde2">
+		<section class="contacto container section" id="contacto" data-color="#3498db">
 			<h2>Contacto</h2>
 			<div class="row form">
 				<div class="col-md-12">
@@ -234,6 +235,9 @@
 		
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+		<script src="js/ScrollMagic.min.js"></script>
+
 		<script type="text/javascript">
 			$(document).ready(function(){
 
@@ -281,11 +285,45 @@
 			                
 			            }
 			        });
+			        
 			    });
 
 			});
 
 			
+		</script>
+		<script>
+			$(function () {
+    			// init
+			    var controller = new ScrollMagic.Controller({
+			        globalSceneOptions: {
+			            triggerHook: 'onLeave'
+			        }
+			    });
+
+			    // get all slides
+			    var slides = document.querySelectorAll(".section");
+
+			    // create scene for every slide
+			    for (var i=0; i<slides.length; i++) {
+			        new ScrollMagic.Scene({
+			                triggerElement: slides[i]
+			            })
+			            .setPin(slides[i], {pushFollowers: false})
+			            .addTo(controller);
+			    }
+
+			    // fix navbar when scrolling
+			    var banner = $('#nav-container');
+			    new ScrollMagic.Scene({
+			        triggerElement: '#section-web',
+			        triggerHook: 'onCenter',
+			        offset: -150
+			    })
+			        .setClassToggle(banner[0], 'fixed')
+			        .setTween(banner[0], 0.3, {top: 0, ease: Power2.EaseIn})
+			        .addTo(controller);
+			});
 		</script>
 	
 	</body>

@@ -227,7 +227,7 @@ svg{
 /***************/
 section{
 	padding:80px 40px;
-	min-height:600px;
+	height: 80%;
 }
 section h2{
 	font-family: 'Gotham';
@@ -250,6 +250,9 @@ section p{
 	background-color: #3498db;
 } 
 
+.verde2{
+	background-color: #1a7370;
+}
 
 /***************/
 /* Scroll Arrow */
